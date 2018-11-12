@@ -1,0 +1,330 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Mon Nov 12 14:42:06 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "activelot",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lottery_name",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "addwallets",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lottery",
+                    "type": "name"
+                },
+                {
+                    "name": "addres_wallet",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "addwalletsr",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lottery",
+                    "type": "name"
+                },
+                {
+                    "name": "addres_wallet",
+                    "type": "string"
+                },
+                {
+                    "name": "range",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "apprwint",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lottery",
+                    "type": "name"
+                },
+                {
+                    "name": "list_win",
+                    "type": "win_obj[]"
+                }
+            ]
+        },
+        {
+            "name": "apprwinu",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lottery",
+                    "type": "name"
+                },
+                {
+                    "name": "list_win",
+                    "type": "win_obj[]"
+                }
+            ]
+        },
+        {
+            "name": "apprwinur",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lottery",
+                    "type": "name"
+                },
+                {
+                    "name": "list_win",
+                    "type": "win_obj[]"
+                }
+            ]
+        },
+        {
+            "name": "buyticket",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lottery",
+                    "type": "name"
+                },
+                {
+                    "name": "addres_wallet",
+                    "type": "string"
+                },
+                {
+                    "name": "count_ticket",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "clearlottery",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lottery",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "cleartickets",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lottery",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "clearwallets",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lottery",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "clearwinners",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lottery",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lottery",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "ticket",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "id_wallet",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "wallet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "address_wallet",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "win_obj",
+            "base": "",
+            "fields": [
+                {
+                    "name": "number",
+                    "type": "uint64"
+                },
+                {
+                    "name": "id_rng_trx",
+                    "type": "string"
+                },
+                {
+                    "name": "prize",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "winner",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id_ticket",
+                    "type": "uint64"
+                },
+                {
+                    "name": "address_wallet",
+                    "type": "string"
+                },
+                {
+                    "name": "id_rng_trx",
+                    "type": "string"
+                },
+                {
+                    "name": "award_description",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "winners",
+            "base": "",
+            "fields": [
+                {
+                    "name": "date_close",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "winners_list",
+                    "type": "winner[]"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "addwallets",
+            "type": "addwallets",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addwalletsr",
+            "type": "addwalletsr",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "apprwint",
+            "type": "apprwint",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "apprwinu",
+            "type": "apprwinu",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "apprwinur",
+            "type": "apprwinur",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "buyticket",
+            "type": "buyticket",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "clearlottery",
+            "type": "clearlottery",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "cleartickets",
+            "type": "cleartickets",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "clearwallets",
+            "type": "clearwallets",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "clearwinners",
+            "type": "clearwinners",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "activelots",
+            "type": "activelot",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "tickets",
+            "type": "ticket",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "wallets",
+            "type": "wallet",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "winners",
+            "type": "winners",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
